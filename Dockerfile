@@ -16,12 +16,10 @@ WORKDIR /app
 COPY --from=builder /deps /usr/local
 COPY app.py .
 COPY templates/ ./templates/
-COPY static/    ./static/
 
 # ... (Your existing COPY commands for app.py, templates, static) ...
 COPY app.py .
 COPY templates/ ./templates/
-COPY static/    ./static/
 
 # ADD THIS LINE: Give appuser permission to write to the app directory
 RUN chown -R appuser:appuser /app
