@@ -27,6 +27,7 @@ jobs:
         env:
           API_KEY: "test-environment-key"
           SECRET_KEY: "test-environment-secret"
+          PYTHONPATH: . # ADD THIS LINE HERE to let pytest find app.py
         run: |
           pytest tests/ -v
 
