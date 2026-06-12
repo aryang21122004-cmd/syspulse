@@ -158,7 +158,7 @@
 
         // --- 2. DATABASE HISTORY LOGIC (New for Step 8) ---
         function fetchHistory() {
-            fetch('/api/history')
+            fetch('/api/history', { headers: { "X-API-Key": API_KEY } })
                 .then(res => res.json())
                 .then(logs => {
                     const list = document.getElementById('history-list');
