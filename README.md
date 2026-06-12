@@ -18,3 +18,6 @@ A lightweight server monitoring dashboard that tracks CPU, RAM, temperature, and
 cp .env.example .env   # set your API_KEY
 docker compose up --build
 # Open http://localhost
+
+## Live Demo
+http://3.111.53.205
